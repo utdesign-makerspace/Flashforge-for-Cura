@@ -1,10 +1,10 @@
 {
     "id": "creatorpro_extruder_2",
     "version": 2,
-    "name": "Extruder 2",
+    "name": "Left Extruder",
     "inherits": "fdmextruder",
     "metadata": {
-        "machine": "creator_pro",
+        "machine": "flashforgecreatorpro",
         "position": "1"
     },
 
@@ -13,8 +13,6 @@
             "default_value": 1,
             "maximum_value": "1"
         },
-        "machine_nozzle_offset_x": { "default_value": 0.0 },
-        "machine_nozzle_offset_y": { "default_value": 0.0 },
         "machine_nozzle_size": { "default_value": 0.4 },
         "material_diameter": { "default_value": 1.75 }
     }
