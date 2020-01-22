@@ -4,9 +4,11 @@ This is a complete functional Cura profile for FlashForge Creator Pro. Tested wi
 Inspired by and based on the following work:
 
 1. Toylerrr's Cura profile on GitHub: https://github.com/Toylerrr/Flashforge-for-Cura
+
 I forked the repo, but ended up reimplementing all profiles more or less completely from scratch. But it was a good starting point.
 
 2. Lyl3's profile on Thingiverse: https://www.thingiverse.com/thing:3569113
+
 I took his start/stop GCode scripts, which are in turn based on Simplify3D start/stop scripts, so I had a high confidence that they would work well. I cleaned them up a bit and made a single but important modification that allows to use the same script for either left or right extruder, so you don't have to change it when you change the active extruder. However it doesn't work with dual extrusion yet, that will come later.
 
 3. Simplify3D parameters.
@@ -49,7 +51,7 @@ Alternatively, you can do it manually:
 
 ## Windows
 
-### Into local AppData (preferred for single-user installations)
+#### Into local AppData (preferred for single-user installations)
 
 This is a preferred way as it should survive application updates.
 
@@ -57,7 +59,7 @@ This is a preferred way as it should survive application updates.
 2. Then go to Contents\Resources\resources and copy files from definitions, extruders and meshes folders from the downloaded ZIP file (or cloned repository) into the respective folders in Cura. You may need to create `meshes` folder first.
 3. Perform steps from post-install section below.
 
-### Into application folder (if you have multiple user accounts on your PC that will need to use this printer)
+#### Into application folder (if you have multiple user accounts on your PC that will need to use this printer)
 
 1. Open Cura application resources folder located at `C:\Program Files\Ultimaker Cura 4.4\resources` (for 4.4.x, for later versions it will be different). 
 2. Then copy files from definitions, extruders and meshes folders from the downloaded ZIP file (or cloned repository) into the respective folders in Cura. 
