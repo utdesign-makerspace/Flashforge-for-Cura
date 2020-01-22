@@ -1,7 +1,7 @@
 # Flashforge for Cura
 
 This is a complete functional Cura profile for FlashForge Creator Pro. Tested with Cura 4.4.1. Single extrusion so far, but will add dual later.
-Inspired and based on the following work:
+Inspired by and based on the following work:
 
 1. Toylerrr's Cura profile on GitHub: https://github.com/Toylerrr/Flashforge-for-Cura
 I forked the repo, but ended up reimplementing all profiles more or less completely from scratch. But it was a good starting point.
@@ -11,7 +11,7 @@ I took his start/stop GCode scripts, which are in turn based on Simplify3D start
 
 3. Simplify3D parameters.
 
-4. Hardware parameters found in Sailfish and GPX tool source code.
+4. Hardware parameters found in GPX tool source code.
 
 It is pretty much plug-n-play. The major improvement compared to all other profiles mentioned above, is that it is based on the actual hardware parameters for FFCP, so it won't crash the bed to the floor (because the Z-limit direction is set correctly), for example. It will also use relative extrusion mode - this is what Simplify3D and FlashPrint use.
 
