@@ -1,5 +1,29 @@
 # Flashforge for Cura
 
+## Important - please read first!
+
+_Jan 24, 2020_
+
+This is BETA version, use at your own risk!
+Tested on FlashForge Creator Pro on left extruder only, but seems to generate a correct code for the right extruder as well.
+
+PLEASE UPDATE TO THE NEWEST VERSION! The initial release had a bug that was causing carriage to crash against left stop when using the right extruder. The current version fixes it.
+
+This is SINGLE EXTRUSION only so far. Please DISABLE UNUSED EXTRUDER in Cura before slicing otherwise it will generate g-code for the default (right) extruder! 
+I'm working on proper dual extrusion support, but no ETA yet.
+
+Remember - Extruder 1 is RIGHT, Extruder 2 is LEFT! 
+
+Please, carefully read both Installation and Post Install sections below.
+
+## Changelog
+
+v.0.2 (Jan 24, 2020) - Fixed bug with incorrect init/wipe code for right extruder
+
+v.0.1 (Jan 22, 2020) - Initial commit
+
+## Description
+
 This is a complete functional Cura profile for FlashForge Creator Pro. Tested with Cura 4.4.1. Single extrusion so far, but will add dual later.
 Inspired by and based on the following work:
 
@@ -71,7 +95,9 @@ This is a preferred way as it should survive application updates.
 1. Launch Cura and click on Add Printer in the printer selection dropdown. You should be able to see FlashForge Creator Pro in the list.
 2. Install X3GWriter plugin from the Marketplace menu
 
-Remember, that that extruder 0 is right and extruder 1 is left. The easiest way to disable/enable specific extruder is to go to Settings menu and do it from there as they are named properly in it. *_It doesn't work with dual extrusion yet!!!!_*
+BEFORE SLICING, DISABLE UNUSED EXTRUDER! Single extrusion only so far!
+
+Remember, that that extruder 1 is right and extruder 2 is left. The easiest way to disable/enable specific extruder is to go to Settings menu and do it from there as they are named properly in it. *_It doesn't work with dual extrusion yet!!!!_*
 
 Please open an issue if you find a bug or something is not working.
 
