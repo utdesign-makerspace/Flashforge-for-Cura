@@ -18,6 +18,8 @@ Please, carefully read both Installation and Post Install sections below.
 
 ## Changelog
 
+v.0.3 (Jan 25, 2020) - Decreased first layer speed to 15 mm/s for even better adhesion. You can override that in settings.
+
 v.0.2 (Jan 24, 2020) - Fixed bug with incorrect init/wipe code for right extruder. Slowed down default initial layer speed to 20 mm/s for better adhesion.
 
 v.0.1 (Jan 22, 2020) - Initial commit
