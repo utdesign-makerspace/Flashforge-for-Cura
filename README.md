@@ -5,7 +5,7 @@
 _Jan 24, 2020_
 
 This is BETA version, use at your own risk!
-Tested on FlashForge Creator Pro on left extruder only, but seems to generate a correct code for the right extruder as well.
+Tested on FlashForge Creator Pro on left and right extruders, and users also report comptibility with Creator X.
 
 PLEASE UPDATE TO THE NEWEST VERSION! The initial release had a bug that was causing carriage to crash against left stop when using the right extruder. The current version fixes it.
 
