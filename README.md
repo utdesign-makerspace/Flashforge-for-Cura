@@ -68,17 +68,17 @@ Alternatively, you can do it manually:
 2. Then go to Contents/Resources/resources and copy files from definitions, extruders and meshes folders from the downloaded ZIP file (or cloned repository) into the respective folders in Cura. You may need to create `meshes` folder first.
 3. Perform steps from post-install section below.
 
-### Linux
-
-Change to unzipped folder and run `bash ./install.sh`
-
 #### Into Application (if you have multiple user accounts on your Mac that will need to use this printer)
 
 1. Open your Applications folder in Finder and right-click on Ultimaker Cura. Click on Show Package Contents.
 2. Then go to Contents/Resources/resources and copy files from definitions, extruders and meshes folders from the downloaded ZIP file (or cloned repository) into the respective folders in Cura.
 3. Perform steps from post-install section below.
 
-## Windows
+### Linux
+
+Change to unzipped folder and run `bash ./install.sh`
+
+### Windows
 
 #### Into local AppData (preferred for single-user installations)
 
