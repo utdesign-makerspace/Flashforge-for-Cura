@@ -5,7 +5,7 @@
 _Jan 24, 2020_
 
 This is BETA version, use at your own risk!
-Tested on FlashForge Creator Pro on left and right extruders, and users also report comptibility with Creator X.
+Tested on FlashForge Creator Pro on left and right extruders, and users also report compatibility with Creator X.
 
 PLEASE UPDATE TO THE NEWEST VERSION! The initial release had a bug that was causing carriage to crash against left stop when using the right extruder. The current version fixes it.
 
@@ -67,7 +67,7 @@ The easiest way is to use the supplied script. The script will attempt to instal
 Alternatively, you can do it manually:
 
 1. Open Cura library folder located at `/Users/your_username/Library/Application\ Support/cura/4.4/` (for 4.4.x, for later versions it will be different). 
-2. Then go to Contents/Resources/resources and copy files from definitions, extruders and meshes folders from the downloaded ZIP file (or cloned repository) into the respective folders in Cura. You may need to create `meshes` folder first.
+2. Copy files from definitions, extruders and meshes folders from the downloaded ZIP file (or cloned repository) into the respective folders in Cura. You may need to create `meshes` folder first.
 3. Perform steps from post-install section below.
 
 #### Into Application (if you have multiple user accounts on your Mac that will need to use this printer)
@@ -87,7 +87,7 @@ Change to unzipped folder and run `bash ./install.sh`
 This is a preferred way as it should survive application updates.
 
 1. Open Cura library folder located at `C:\Users\your_username\AppData\Roaming\cura\4.4` (for 4.4.x, for later versions it will be different). 
-2. Then go to Contents\Resources\resources and copy files from definitions, extruders and meshes folders from the downloaded ZIP file (or cloned repository) into the respective folders in Cura. You may need to create `meshes` folder first.
+2. Copy files from definitions, extruders and meshes folders from the downloaded ZIP file (or cloned repository) into the respective folders in Cura. You may need to create `meshes` folder first.
 3. Perform steps from post-install section below.
 
 #### Into application folder (if you have multiple user accounts on your PC that will need to use this printer)
