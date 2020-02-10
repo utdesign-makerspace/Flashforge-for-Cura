@@ -14,6 +14,12 @@
         },
         "machine_nozzle_size": { "default_value": 0.4 },
         "material_diameter": { "default_value": 1.75 },
+        "machine_extruder_start_pos_abs": { "default_value": true },
+        "machine_extruder_start_pos_x": { "value": "prime_tower_position_x" },
+        "machine_extruder_start_pos_y": { "value": "prime_tower_position_y" },
+        "machine_extruder_end_pos_abs": { "default_value": true },
+        "machine_extruder_end_pos_x": { "value": "prime_tower_position_x" },
+        "machine_extruder_end_pos_y": { "value": "prime_tower_position_y" },
         "initial_pos_gcode": { "default_value": "G1 X-110 Y-70 Z30 F9000 ; move to wait position left hand side of the table" },
         "nozzle_wipe_gcode": { "default_value": "G1 X-140 Y-70 F9000 ; reposition nozzle\nG1 X-100 Y-70 E25 F300 ; purge nozzle\nG1 X-110 Y-70 Z0.15 F1200 ; slow wipe\nG1 X-100 Y-70 Z0.5 F1200 ; lift" }
     }
