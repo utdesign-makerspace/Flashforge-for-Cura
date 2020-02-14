@@ -2,15 +2,16 @@
 
 ## Important - please read first!
 
-_Jan 24, 2020_
+_Feb 14, 2020_
 
-This is BETA version, use at your own risk!
-Tested on FlashForge Creator Pro on left and right extruders, and users also report compatibility with Creator X.
+This version supports both single and dual extrusion. Dual extrusion requires Cura 4.5 BETA or higher. It may work with 4.4.1 but there is a bug that may result in choosing incorrect tool for the skirt/brim/raft. It was fixed in Cura 4.5-beta.
 
-PLEASE UPDATE TO THE NEWEST VERSION! The initial release had a bug that was causing carriage to crash against left stop when using the right extruder. The current version fixes it.
+Tested on FlashForge Creator Pro on left, right and both extruders, and users also report compatibility with Creator X.
 
-This is SINGLE EXTRUSION only so far. Please DISABLE UNUSED EXTRUDER in Cura before slicing otherwise it will generate g-code for the default (right) extruder! 
-I'm working on proper dual extrusion support, but no ETA yet.
+PLEASE UPDATE TO THE NEWEST VERSION! 
+
+If using only SINGLE nozzle, please DISABLE UNUSED EXTRUDER before slicing to avoid heating up both nozzles and printing brim/skirt/raft with a different extruder!
+When using dual extrusion it's recommended to use ooze shield. Also use prime tower for the cleanest result, but it will significantly increase printing time and result in many tool changes due to dual extrusion implementation in Cura.
 
 Remember - Extruder 1 is RIGHT, Extruder 2 is LEFT! 
 
@@ -18,17 +19,20 @@ Please, carefully read both Installation and Post Install sections below.
 
 ## Changelog
 
+v0.5 (Feb 14, 2020) - DUAL extrusion support!
+
 v0.4 (Feb 1, 2020) - Linux support in install script (thanks @toluschr)
 
-v.0.3 (Jan 25, 2020) - Decreased first layer speed to 15 mm/s for even better adhesion. You can override that in settings.
+v0.3 (Jan 25, 2020) - Decreased first layer speed to 15 mm/s for even better adhesion. You can override that in settings.
 
-v.0.2 (Jan 24, 2020) - Fixed bug with incorrect init/wipe code for right extruder. Slowed down default initial layer speed to 20 mm/s for better adhesion.
+v0.2 (Jan 24, 2020) - Fixed bug with incorrect init/wipe code for right extruder. Slowed down default initial layer speed to 20 mm/s for better adhesion.
 
-v.0.1 (Jan 22, 2020) - Initial commit
+v0.1 (Jan 22, 2020) - Initial commit
 
 ## Description
 
-This is a complete functional Cura profile for FlashForge Creator Pro. Tested with Cura 4.4.1. Single extrusion so far, but will add dual later.
+This is a complete functional Cura profile for FlashForge Creator Pro. Tested with Cura 4.4.1 (single only) and 4.5-beta (single and dual).
+
 Inspired by and based on the following work:
 
 1. Toylerrr's Cura profile on GitHub: https://github.com/Toylerrr/Flashforge-for-Cura
@@ -37,7 +41,7 @@ I forked the repo, but ended up reimplementing all profiles more or less complet
 
 2. Lyl3's profile on Thingiverse: https://www.thingiverse.com/thing:3569113
 
-I took his start/stop GCode scripts, which are in turn based on Simplify3D start/stop scripts, so I had a high confidence that they would work well. I cleaned them up a bit and made a single but important modification that allows to use the same script for either left or right extruder, so you don't have to change it when you change the active extruder. However it doesn't work with dual extrusion yet, that will come later.
+I took his start/stop GCode scripts, which are in turn based on Simplify3D start/stop scripts, so I had a high confidence that they would work well. I cleaned them up a bit and made a single but important modification that allows to use the same script for either left or right extruder (or both at the same time), so you don't have to change it when you change the active extruder or use dual extrusion. 
 
 3. Simplify3D parameters.
 
@@ -102,9 +106,9 @@ This is a preferred way as it should survive application updates.
 1. Launch Cura and click on Add Printer in the printer selection dropdown. You should be able to see FlashForge Creator Pro in the list.
 2. Install X3GWriter plugin from the Marketplace menu
 
-BEFORE SLICING, DISABLE UNUSED EXTRUDER! Single extrusion only so far!
+BEFORE SLICING, DISABLE UNUSED EXTRUDER if using just one nozzle!
 
-Remember, that that extruder 1 is right and extruder 2 is left. The easiest way to disable/enable specific extruder is to go to Settings menu and do it from there as they are named properly in it. *_It doesn't work with dual extrusion yet!!!!_*
+Remember, that that extruder 1 is right and extruder 2 is left. The easiest way to disable/enable specific extruder is to go to Settings menu and do it from there as they are named properly in it. 
 
 Please open an issue if you find a bug or something is not working.
 
