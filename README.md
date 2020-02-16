@@ -19,6 +19,8 @@ Please, carefully read both Installation and Post Install sections below.
 
 ## Changelog
 
+v0.6 (Feb 16, 2020) - Implemented extruder offset to aid Cura in path computation (wipe the inactive nozzle, etc), tweaked ooze shield parameters and tool change position.
+
 v0.5 (Feb 14, 2020) - DUAL extrusion support!
 
 v0.4 (Feb 1, 2020) - Linux support in install script (thanks @toluschr)
@@ -58,6 +60,12 @@ Please download ZIP file and unzip it somewhere on your hard drive. Alternativel
 There are two ways to install the application - into user folder (preferred) and application package itself. Installing into user folder will allow it to survive application updates, but if you have multiple user accounts on your Mac or PC, each user will need to install the profile separately as it will not be visible to all users. In this case you can use alternative method to install the profile globally, however it will not survive application update as application folder will be rewritten during update.
 
 ### MacOS 
+
+#### Note for MacOS users
+
+If you save the sliced model as x3g (default for FFCP) and you get an empty file, follow the steps described in this issue to install the required libraries: https://github.com/haskell/haskell-platform/issues/231#issuecomment-177530716
+
+Or alternatively forget about X3G and use gcode with Octoprint!
 
 #### Into user library (preferred for single-user installations)
 
