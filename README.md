@@ -1,4 +1,6 @@
-# Flashforge for Cura
+# Flashforge (Qidi Tech 1) for Cura
+
+## Forked to make cosmetic changes to rename Flashforge into Qidi. Readme below is unchanged.
 
 ## Important - please read first!
 
