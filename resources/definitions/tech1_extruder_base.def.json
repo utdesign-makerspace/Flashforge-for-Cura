@@ -1,5 +1,5 @@
 {
-    "id": "creatorpro_extruder_base",
+    "id": "tech1_extruder_base",
     "version": 2,
     "name": "Base Extruder (do not use)",
     "inherits": "fdmextruder",

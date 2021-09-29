@@ -1,21 +1,19 @@
 {
-    "id": "creator_pro",
-    "name": "Flashforge Creator Pro",
+    "id": "tech_1",
+    "name": "Qidi Tech 1",
     "version": 2,
     "inherits": "fdmprinter",
     "metadata": {
         "visible": true,
-        "author": "Eugr",
-        "manufacturer": "FlashForge",
-        "platform": "FlashForge_CreatorPro.stl",
-        "machine_x3g_variant": "fcp",
-        "file_formats": "application/x3g",
+        "author": "UTDesign Makerspace",
+        "manufacturer": "Qidi",
+        "platform": "Qidi_Tech1.stl",
         "platform_offset": [ 0, 0, 0],
         "nozzle_offsetting_for_disallowed_areas": false,
         "machine_extruder_trains":
         {
-            "0": "creatorpro_extruder_1",
-            "1": "creatorpro_extruder_2"
+            "0": "tech1_extruder_1",
+            "1": "tech1_extruder_2"
         }
     },
     "settings": {
@@ -39,7 +37,7 @@
         }
     },
     "overrides": {
-        "machine_name": { "default_value": "FlashForge Creator Pro" },
+        "machine_name": { "default_value": "Qidi Tech 1" },
         "machine_gcode_flavor": { "default_value": "Makerbot" },
 		"material_diameter": { "default_value": 1.75 },
         "machine_extruder_count": { "default_value": 2 },
