@@ -114,7 +114,6 @@ This is a preferred way as it should survive application updates.
 ## Post-install
 
 1. Launch Cura and click on Add Printer in the printer selection dropdown. You should be able to see FlashForge Creator Pro in the list.
-2. Install X3GWriter plugin from the Marketplace menu
 
 BEFORE SLICING, DISABLE UNUSED EXTRUDER if using just one nozzle!
 
